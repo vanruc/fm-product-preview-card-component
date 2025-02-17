@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-fraunces: "Fraunces", serif;
+  --font-montserrat: "Montserrat", serif;
+
+  --color-black: #1c232b;
+  --color-grey: #6c7289;
+  --color-cream: #f2eae2;
+  --color-green-500: #3d8168;
+  --color-green-700: #1a4032;
+
+  --breakpoint-xs: 375px;
+}

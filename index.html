@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="stylesheet" href="css/tailwind.output.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      html {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body class="bg-cream">
+    <main class="xs:py-[80px] xs:pl-[13px] xs:pr-[12px]">
+      <section
+        class="card__component xs:flex-col xs:rounded-[8px] flex overflow-hidden"
+      >
+        <img
+          src="images/image-product-mobile.jpg"
+          alt=""
+          class="card__component--img xs:h-[342px] xs:w-full content-center"
+        />
+        <div
+          class="card__component__content xs:flex-col xs:gap-[24px] xs:p-[32px] flex self-stretch bg-white"
+        >
+          <div
+            class="card__component__content--title xs:flex-col xs:gap-[24px] flex self-stretch"
+          >
+            <p
+              class="text-grey font-montserrat text-[0.85714rem] leading-[120%] font-medium tracking-[0.35714rem] uppercase"
+            >
+              Perfume
+            </p>
+            <h1 class="font-fraunces text-[2.28571rem] font-bold text-black">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p class="text-grey font-montserrat leading-[160%] font-medium">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div
+            class="card__component__content--price flex items-center gap-[1.14286rem]"
+          >
+            <span
+              class="font-fraunces text-[2.28571rem] font-bold text-green-500"
+              >$149.99</span
+            >
+            <span
+              class="text-grey font-montserrat leading-[120%] font-medium line-through"
+              >$169.99</span
+            >
+          </div>
+          <button
+            class="card__component__content--button flex items-center justify-center gap-[0.57143rem] self-stretch rounded-[8px] bg-green-500 px-[2.28571rem] py-[1.14286rem] font-bold text-white"
+          >
+            <img src="images/icon-cart.svg" alt="add to cart icon" />
+            <span class="font-montserrat leading-[110%]">Add to Cart</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
