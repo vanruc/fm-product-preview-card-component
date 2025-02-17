@@ -850,9 +850,6 @@
   .w-97 {
     width: calc(var(--spacing) * 97);
   }
-  .w-\[300px\] {
-    width: 300px;
-  }
   .w-full {
     width: 100%;
   }
@@ -867,9 +864,6 @@
   }
   .min-w-screen {
     min-width: 100vw;
-  }
-  .flex-1 {
-    flex: 1;
   }
   .flex-auto {
     flex: auto;
@@ -891,12 +885,6 @@
   }
   .grow {
     flex-grow: 1;
-  }
-  .basis-1 {
-    flex-basis: calc(var(--spacing) * 1);
-  }
-  .basis-1\/2 {
-    flex-basis: calc(1/2 * 100%);
   }
   .basis-auto {
     flex-basis: auto;
@@ -1708,9 +1696,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/50 {
     background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
@@ -2678,6 +2663,13 @@
   .transform-view {
     transform-box: view-box;
   }
+  .hover\:bg-green-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-700);
+      }
+    }
+  }
   .xs\:block {
     @media (width >= 375px) {
       display: block;
@@ -2728,16 +2720,6 @@
       padding-block: 80px;
     }
   }
-  .xs\:pr-\[12px\] {
-    @media (width >= 375px) {
-      padding-right: 12px;
-    }
-  }
-  .xs\:pl-\[13px\] {
-    @media (width >= 375px) {
-      padding-left: 13px;
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2771,11 +2753,6 @@
   .md\:gap-\[32px\] {
     @media (width >= 48rem) {
       gap: 32px;
-    }
-  }
-  .md\:px-\[84px\] {
-    @media (width >= 48rem) {
-      padding-inline: 84px;
     }
   }
   .md\:py-\[286\.5px\] {
