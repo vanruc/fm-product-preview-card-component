@@ -24,17 +24,26 @@
     </style>
   </head>
   <body class="bg-cream">
-    <main class="xs:py-[80px] xs:pl-[13px] xs:pr-[12px]">
+    <main
+      class="xs:py-[80px] xs:w-[350px] mx-auto md:w-[600px] md:py-[286.5px]"
+    >
       <section
-        class="card__component xs:flex-col xs:rounded-[8px] flex overflow-hidden"
+        class="card__component xs:flex-col xs:rounded-[8px] flex overflow-hidden md:flex-row md:items-stretch"
       >
-        <img
-          src="images/image-product-mobile.jpg"
-          alt=""
-          class="card__component--img xs:h-[342px] xs:w-full content-center"
-        />
+        <div class="xs:w-full md:w-1/2">
+          <img
+            src="images/image-product-mobile.jpg"
+            alt=""
+            class="card__component--img xs:h-[342px] xs:w-full xs:block content-center md:hidden"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="product image"
+            class="card__component--img xs:hidden h-full w-full object-cover md:block"
+          />
+        </div>
         <div
-          class="card__component__content xs:flex-col xs:gap-[24px] xs:p-[32px] flex self-stretch bg-white"
+          class="card__component__content xs:flex-col xs:gap-[24px] xs:p-[32px] flex self-stretch bg-white md:w-1/2 md:gap-[32px]"
         >
           <div
             class="card__component__content--title xs:flex-col xs:gap-[24px] flex self-stretch"
@@ -44,7 +53,9 @@
             >
               Perfume
             </p>
-            <h1 class="font-fraunces text-[2.28571rem] font-bold text-black">
+            <h1
+              class="font-fraunces text-[2.28571rem] leading-[1em] font-bold text-black"
+            >
               Gabrielle Essence Eau De Parfum
             </h1>
             <p class="text-grey font-montserrat leading-[160%] font-medium">
